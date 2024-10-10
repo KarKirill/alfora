@@ -21,9 +21,9 @@ ul {
   --main-text-color: black;
   --main-accent-color: #8d394d;
   --main-line-color: var(--main-text-color);
-  --main-line-size: .01rem;
+  --main-line-size: calc(var(--index) * .0001);
   --main-oppacity: .8;
-  --main-padding: 0 12rem 0 12rem;
+  --main-padding: 0 calc(var(--index) * 12);
 }
 
 .inter-font {
@@ -35,7 +35,7 @@ ul {
 
 html {
   /* font-size: 14px; */
-  font-size: calc(var(--index) * 1);
+  font-size: calc(var(--index) * .7);
 }
 
 /* Тело */
@@ -137,7 +137,7 @@ body {
   flex-direction: column;
   row-gap: 4rem;
 
-  margin: 0 12rem;    
+  margin: var(--main-padding);    
 
   height: 100vh;
 }
@@ -174,10 +174,9 @@ body {
 .slogan {
   position: relative;
 
-  line-height: 4.5rem;
-  font-size: 5rem;
-  letter-spacing: .01rem;
-
+  line-height: calc(var(--index) * 3.5);
+  font-size: calc(var(--index) * 4);
+  letter-spacing: calc(var(--index) * .01);
   font-weight: 500;
 
   width: 100%;
@@ -195,18 +194,18 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin-top: 3rem;
+  margin-top: calc(var(--index) * 2);
   top: 100%;
   
-  width: 8rem;
-  height: 1.7rem;
+  width: calc(var(--index) * 5.5);
+  height: calc(var(--index) * 1.3);
 
   border: var(--main-line-color) solid var(--main-line-size);
-  padding: .2rem;
-  border-radius: 1rem;
+  padding: calc(var(--index) * .3);
+  border-radius: calc(var(--index) * 1);
 
   font-weight: lighter;
-  font-size: .7rem;
+  font-size: calc(var(--index) * .5);
   letter-spacing: normal;
 
   background-color: var(--main-bg-color);
