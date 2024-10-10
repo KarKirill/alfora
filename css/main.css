@@ -34,7 +34,8 @@ ul {
 }
 
 html {
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: calc(var(--index) * 1);
 }
 
 /* Тело */
