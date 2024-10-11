@@ -19,11 +19,11 @@ ul {
   --index: calc(1vw + 1vh); /* Универсальная единица расчета */
   --main-bg-color: #fff;
   --main-text-color: black;
-  --main-accent-color: #8d394d;
+  --main-accent-color: #ae314e;
   --main-line-color: var(--main-text-color);
-  --main-line-size: calc(var(--index) * .0001);
+  --main-line-size: calc(var(--index) * .025);
   --main-oppacity: .8;
-  --main-padding: 0 calc(var(--index) * 12);
+  --main-padding: 0 calc(var(--index) * 12.5);
 }
 
 .inter-font {
@@ -35,7 +35,7 @@ ul {
 
 html {
   /* font-size: 14px; */
-  font-size: calc(var(--index) * .7);
+  font-size: calc(var(--index) * .75);
 }
 
 /* Тело */
@@ -64,7 +64,7 @@ body {
   width: 100vw;
   
   padding: var(--main-padding);
-  letter-spacing: .1rem;
+  letter-spacing: calc(var(--index) * .15);
 
   background-color: var(--main-bg-color);
   opacity: var(--main-oppacity);
@@ -86,14 +86,14 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1.25rem 0 1.25rem 0;
+  padding: calc(var(--index) * 1) 0 calc(var(--index) * 1) 0;
 
   color: var(--main-text-color);
 
   z-index: 300;
 
   row-gap: calc(var(--index) * .5);
-  column-gap: 1.5rem;
+  column-gap: calc(var(--index) * 1);
   flex-wrap: wrap;
 
   border-bottom: var(--main-line-color) solid var(--main-line-size);
@@ -103,15 +103,15 @@ body {
   margin-right: auto; 
 
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: calc(var(--index) * 1.2);
 }
 
 .nav-list {
   display: flex;
 
-  column-gap: 2rem;
+  column-gap: calc(var(--index) * 1.2);
 
-  font-size: .9rem;
+  font-size: calc(var(--index) * 0.7);
   font-weight: 300;
 
   letter-spacing: normal;
@@ -135,7 +135,7 @@ body {
   justify-content: center;
 
   flex-direction: column;
-  row-gap: 4rem;
+  row-gap: calc(var(--index) * 2);
 
   margin: var(--main-padding);    
 
@@ -145,8 +145,6 @@ body {
 .promo2 {
   background: linear-gradient(
     217deg,
-    /* #85425A, */
-    /* #D07086 70% */
     #8d394d,
     #D07086 70%
   ),
@@ -175,7 +173,7 @@ body {
   position: relative;
 
   line-height: calc(var(--index) * 3.5);
-  font-size: calc(var(--index) * 4);
+  font-size: calc(var(--index) * 3.8);
   letter-spacing: calc(var(--index) * .01);
   font-weight: 500;
 
@@ -194,7 +192,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin-top: calc(var(--index) * 2);
+  margin-top: calc(var(--index) * 1.5);
   top: 100%;
   
   width: calc(var(--index) * 5.5);
@@ -206,7 +204,7 @@ body {
 
   font-weight: lighter;
   font-size: calc(var(--index) * .5);
-   letter-spacing: normal;
+  letter-spacing: normal;
 
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
