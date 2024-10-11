@@ -17,7 +17,7 @@ ul {
 /* Частоиспользуемые свойства */
 :root {
   --index: calc(1vw + 1vh); /* Универсальная единица расчета */
-  --main-bg-color: black;
+  --main-bg-color: #fff;
   --main-text-color: black;
   --main-accent-color: #8d394d;
   --main-line-color: var(--main-text-color);
