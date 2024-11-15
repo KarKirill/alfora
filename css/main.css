@@ -17,9 +17,9 @@ ul {
 /* Частоиспользуемые свойства */
 :root {
   --index: calc(1vw + 1vh); /* Универсальная единица расчета */
-  --main-bg-color: #fff;
+  --main-bg-color: #DED8CB;
   --main-text-color: black;
-  --main-accent-color: #ae314e;
+  --main-accent-color: #C04277;
   --main-line-color: var(--main-text-color);
   --main-line-size: calc(var(--index) * .025);
   --main-oppacity: .8;
@@ -72,7 +72,7 @@ body {
 
 .nav-list__link:hover {
   color: var(--main-accent-color);
-  opacity: var(--main-oppacity);
+  /* opacity: var(--main-oppacity); */
 }
 
 .nav a {
@@ -208,6 +208,15 @@ body {
 
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+
+  cursor: pointer;
+}
+
+.btn__info:hover
+{
+  background-color: var(--main-accent-color);
+  opacity: .8;
+  transition: .3s;
 }
 
 .sakura {
@@ -221,4 +230,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.btn__info a {
+  text-decoration: none;
+  color: var(--main-text-color);
 }

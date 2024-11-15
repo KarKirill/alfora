@@ -1,16 +1,7 @@
-from random import randint
-import datetime as dt
-from xml.dom.minidom import Element
-
-
-def foo():
-    return 123
-
-def add_two_numbers(x, y):
-    return x + y
-
-def generate_random_number():
-    x = randint(0, 10)
-    return x
-
-
+import requests
+ 
+url = 'http://127.0.0.1:5500/html/blank.html'
+response = requests.get(url)
+ 
+with open('.png', 'wb') as file:
+    file.write(response.content)

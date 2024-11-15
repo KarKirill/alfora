@@ -3,25 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to al'fora!</title>
+  <title>Document</title>
 
   <!-- Подключение PyScript -->
-  <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> 
-  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>  -->
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> 
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script> 
 
-  <!-- Подключение стилей -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/blank.css">
 
-  <!-- Подключение js -->
-  <script src="js/app.js" defer></script>
+  <script src="/js/file.js" defer></script>
 
-  <!-- Подключение шрифта -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
+  <header></header>
   <nav class="nav">
     <div class="container">
         <div class="nav-row">
@@ -37,20 +34,19 @@
         </div>
     </div>
   </nav>
-  <header class="main-header">
-    <div class="promos">
-      <div class="slogan">
-          Раскрой свою<br>
-          <strong class="slogan-accent">истинную<br></strong>
-          красоту.
-        <button class="btn__info"><a href="html/blank.html">Узнать больше</a></button>
+  <menu></menu>
+  <section>
+    <div class="container__input">
+      <div class="container__input--group">
+        <input id="input" type="file" class="addfile" accept=".png"  onchange="showFile(this)" multiple>
+        <p>Перетащите или вставьте фотографии Паспорта и СНИЛС</p>
       </div>
     </div>
-    <div class="promo2">
+  </section>
+  <py-script>
+    print("Hello World!")
+  </py-script>
 
-    </div>
-    <img src="./img/sakura.png" alt="sakura" class="sakura"> 
-  </header>
+  
 </body>
 </html>
-<!--  -->
